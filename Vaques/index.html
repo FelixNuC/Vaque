@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Vaqueros</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+<body style="text-align: center;">
+
+    <div style="display: inline-flex;" >
+
+        
+        <div>
+            <h1 id="cargadorj1" style="color: rgb(200, 255, 0); margin-right: 5vw;">1</h1>
+        </div> 
+        <div id="personaje 1" >
+            <h1>PLAYER 1</h1>
+        </div>  
+        <div id="campoTexto" style="margin-left: 10vw;margin-right: 10vw;">
+            <h1 id="puntuacion"></h1>
+        </div>
+        <div id="personaje 2">
+            <h1>PLAYER 2</h1>
+        </div>
+        <div>
+            <h1 id="cargadorj2" style="color: rgb(218, 25, 25); margin-left: 5vw;">1</h1>
+        </div> 
+
+    </div>
+    <br>
+    <div id="global">
+
+        <div id="contador bajas j1" ></div>
+        <div     >
+          <img src="visuales/fullBarraVidaJ1.png" width="60%" id="barraVidaJ1">
+        </div>
+
+     
+        <div id="contador bajas j2"></div>
+        <div>
+          <img src="visuales/fullBarraVidaJ2.png" width="60%" id="barraVidaJ2">
+        </div>
+        <br>
+
+    </div>
+
+    <div id="fondo">
+        <img src="visuales/fondo.gif" width="80%" height="500vh" style="border-radius: 50px;">
+    </div>
+
+    <div >
+        <img src="standarpose1.png" id="personaje1">
+    </div>
+    <div >
+        <img src="" id="accionj1" >
+    </div>
+
+    <div>
+        <img src="standarpose2.png"  id="personaje2">
+    </div>
+    <div >
+        <img src="" id="accionj2">
+    </div>
+
+    <div id="contador" class="cont" >
+
+        <h1 id="livec"></h1>
+    </div>
+
+    <div id="contrles" style="display:inline-flex;">
+        <div id=" controles j1" style="margin-right:10vw">
+            <h1> D  Disparar</h1>
+            <h1> S  Recargar</h1>
+            <h1> A  Bloquear</h1>
+        </div>       
+        <div id=" controles j1" style="margin-right:10vw">
+            <h1> Espacio para
+                <br>
+                 Comenzar turno
+            </h1>
+            <button type="button" id="botonReset" onclick="resetear();">Resetear</button>
+
+        </div>
+        <div id=" controles j2">
+            <h1> →  Disparar</h1>
+            <h1> ↓  Recargar</h1>
+            <h1> ←  Bloquear</h1>
+        </div>
+    </div>
+
+    <audio style="display: none;" id="musica" controls preload autoplay loop>
+    <source src="8bitwestern.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src='controlarJuego.js'></script>
+</body>
+</html>
